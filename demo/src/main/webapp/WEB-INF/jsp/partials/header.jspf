@@ -1,0 +1,195 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<header class="shadow-md bg-white sticky top-0 z-50">
+    <!-- Thanh khuyến mãi -->
+    <div id="promoBar" class="bg-primary text-white text-xs py-1.5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative flex justify-center items-center">
+            <p class="text-center">
+                Đăng ký và nhận <strong>20% giảm giá</strong> cho đơn hàng đầu tiên của bạn.
+                <button
+                        class="ml-2 font-semibold bg-white text-primary text-xs px-3 py-0.5 rounded-full hover:bg-primary-light transition-colors duration-200">
+                    Đăng ký ngay
+                </button>
+            </p>
+            <button id="promoCloseBtn" class="absolute right-4 text-gray-200 hover:text-white"
+                    aria-label="Đóng thông báo">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Header chính -->
+    <div id="main-header" class="border-b border-gray-200 transition-all duration-300">
+        <div id="main-header-container"
+             class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20 transition-all duration-300">
+
+            <!-- Nút menu  -->
+            <div class="lg:hidden">
+                <button class="p-1 hover:text-text-main" aria-label="Mở menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Logo -->
+            <div class="flex-shrink-0 relative -top-[2px]">
+                <a href="home.jsp" class="text-xl font-extrabold tracking-widest cursor-pointer flex items-center">
+                    <span class="text-text-main">PTIT</span><span class="text-primary">.STYLE</span>
+                </a>
+            </div>
+
+            <!-- Thanh điều hướng -->
+            <nav class="hidden lg:flex lg:justify-center lg:flex-1">
+                <ul class="flex items-center font-medium space-x-8 text-sm">
+
+                    <!-- Cửa hàng + dropdown -->
+                    <li class="relative">
+                        <button id="shopDropdownLink"
+                                class="flex items-center pb-[3.25px] text-text-main hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-200">
+                            Cửa hàng
+                            <svg class="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <div id="shopDropdown"
+                             class="absolute mt-2 z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-48">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="shopDropdownLink">
+                                <li><a href="products" class="block px-4 py-2 hover:bg-gray-100">Thời trang nam</a>
+                                </li>
+                                <li><a href="products" class="block px-4 py-2 hover:bg-gray-100">Thời trang nữ</a>
+                                </li>
+                                <li><a href="products" class="block px-4 py-2 hover:bg-gray-100">Phụ kiện</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- Các mục khác -->
+                    <li>
+                        <a href="products"
+                           class="inline-flex items-center pb-[3.25px] text-text-main hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-200">
+                            Đang giảm giá
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products"
+                           class="inline-flex items-center pb-[3.25px] text-text-main hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-200">
+                            Sản phẩm mới
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products"
+                           class="inline-flex items-center pb-[3.25px] text-text-main hover:text-primary border-b-2 border-transparent hover:border-primary transition-colors duration-200">
+                            Thương hiệu
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Ô tìm kiếm + biểu tượng -->
+            <div class="flex items-center justify-end">
+                <div class="hidden md:flex items-center bg-gray-100 rounded-full relative -top-[1px]">
+                    <input id="headerSearchInput" type="text" placeholder="Tìm kiếm..."
+                           class="bg-transparent text-sm focus:outline-none py-2 px-4 w-24 focus:w-48 transition-all duration-300"
+                           aria-label="Tìm kiếm" />
+                    <button id="headerSearchBtn" class="p-2 text-gray-500" aria-label="Tìm kiếm">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Giỏ hàng -->
+            <a href="cart.jsp"
+               class="relative inline-flex items-center justify-center p-2 hover:bg-gray-100 rounded-full align-middle transition-colors"
+               aria-label="Giỏ hàng">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 pointer-events-none" fill="none"
+                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                <span
+                        class="absolute -top-1 -right-1 bg-primary text-white text-[10px] leading-none w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                        1
+                    </span>
+            </a>
+
+            <!-- Hồ sơ -->
+            <a href="order-history.jsp" class="p-2 hover:bg-gray-100 rounded-full" aria-label="Tài khoản">
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-6" fill="none" viewBox="0 0 24 24"
+                     stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    </div>
+</header>
+
+<!--  xử lý dropdown, tìm kiếm, đóng promo -->
+<script>
+    document.getElementById('promoCloseBtn')?.addEventListener('click', () => {
+        const bar = document.getElementById('promoBar');
+        if (bar) bar.style.display = 'none';
+    });
+
+    const ddBtn = document.getElementById('shopDropdownLink');
+    const dd = document.getElementById('shopDropdown');
+    if (ddBtn && dd) {
+        let open = false;
+        const close = (e) => {
+            if (!dd.contains(e.target) && !ddBtn.contains(e.target)) {
+                dd.classList.add('hidden');
+                open = false;
+                window.removeEventListener('click', close);
+            }
+        };
+        ddBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            open = !open;
+            dd.classList.toggle('hidden', !open);
+            if (open) window.addEventListener('click', close);
+        });
+    }
+
+    const qInput = document.getElementById('headerSearchInput');
+    const qBtn = document.getElementById('headerSearchBtn');
+    function goSearch() {
+        const q = (qInput?.value || '').trim();
+        if (!q) return;
+        window.location.href = 'search.html?q=' + encodeURIComponent(q);
+    }
+    qBtn?.addEventListener('click', goSearch);
+    qInput?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') goSearch();
+    });
+
+    // ===== BẮT ĐẦU HIỆU ỨNG CUỘN HEADER =====
+    const mainHeader = document.getElementById('main-header');
+    const headerContainer = document.getElementById('main-header-container');
+
+    if (mainHeader && headerContainer) {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                mainHeader.classList.add('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
+                headerContainer.classList.add('h-16');
+                headerContainer.classList.remove('h-20');
+            } else {
+                mainHeader.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-sm');
+                headerContainer.classList.add('h-20');
+                headerContainer.classList.remove('h-16');
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+    }
+    // ===== KẾT THÚC HIỆU ỨNG CUỘN HEADER =====
+</script>

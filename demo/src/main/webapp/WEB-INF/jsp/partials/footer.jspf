@@ -1,0 +1,55 @@
+<!-- Footer -->
+<footer class="bg-gray-100 py-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-5 gap-8 mb-8">
+        <div>
+            <h3 class="font-bold mb-4">PTIT.STYLE</h3>
+            <p class="text-gray-600 text-sm">Chúng tôi có quần áo phù hợp với phong cách của bạn và tự hào được phục vụ từ phụ nữ đến nam giới.</p>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4">CÔNG TY</h3>
+            <ul class="text-gray-600 text-sm space-y-2">
+                <li><a href="#" class="hover:text-black">Giới thiệu</a></li>
+                <li><a href="#" class="hover:text-black">Tính năng</a></li>
+                <li><a href="#" class="hover:text-black">Công việc</a></li>
+                <li><a href="#" class="hover:text-black">Sự nghiệp</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4">HỖ TRỢ</h3>
+            <ul class="text-gray-600 text-sm space-y-2">
+                <li><a href="#" class="hover:text-black">Hỗ trợ khách hàng</a></li>
+                <li><a href="#" class="hover:text-black">Chi tiết giao hàng</a></li>
+                <li><a href="#" class="hover:text-black">Điều khoản và điều kiện</a></li>
+                <li><a href="#" class="hover:text-black">Chính sách bảo mật</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4">CÂU HỎI THƯỜNG GẶP</h3>
+            <ul class="text-gray-600 text-sm space-y-2">
+                <li><a href="#" class="hover:text-black">Tài khoản</a></li>
+                <li><a href="#" class="hover:text-black">Quản lý giao hàng</a></li>
+                <li><a href="#" class="hover:text-black">Đơn hàng</a></li>
+                <li><a href="#" class="hover:text-black">Thanh toán</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-bold mb-4">TÀI NGUYÊN</h3>
+            <ul class="text-gray-600 text-sm space-y-2">
+                <li><a href="#" class="hover:text-black">Sách điện tử miễn phí</a></li>
+                <li><a href="#" class="hover:text-black">Hướng dẫn phát triển</a></li>
+                <li><a href="#" class="hover:text-black">Cách thực hiện - Blog</a></li>
+                <li><a href="#" class="hover:text-black">Danh sách phát YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="border-t border-gray-300 pt-8 flex justify-between items-center">
+        <p class="text-gray-600 text-sm">PTIT.STYLE © 2025-2030. Tất cả các quyền được bảo lưu.</p>
+        <div class="flex gap-4">
+            <i class="fab fa-cc-visa text-2xl text-gray-400"></i>
+            <i class="fab fa-cc-mastercard text-2xl text-gray-400"></i>
+            <i class="fab fa-cc-paypal text-2xl text-gray-400"></i>
+            <i class="fab fa-apple text-2xl text-gray-400"></i>
+            <i class="fab fa-google text-2xl text-gray-400"></i>
+        </div>
+    </div>
+</footer>
