@@ -12,7 +12,7 @@ public class ProductDAO {
 
     private static final String URL  =
             "jdbc:mysql://localhost:3306/ptitshop?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
-    private static final String USER = "test";
+    private static final String USER = "admin";
     private static final String PASS = "124";
 
     private Connection getConnection() throws SQLException {
