@@ -1,17 +1,10 @@
 # PTIT SHOP (PTIT.STYLE)
 
-Hệ thống Website Thương mại điện tử & Quản lý bán hàng thời trang/merchandise dành cho sinh viên PTIT, xây dựng trên nền tảng **Java Web (Servlet/JSP + JDBC)** và cơ sở dữ liệu **MySQL**.
+Hệ thống website bán hàng thời trang trực tuyến, xây dựng bằng **Java Web (Servlet/JSP + JDBC)** và cơ sở dữ liệu **MySQL**.
 
 ---
 
-## 📦 1. Cơ Sở Dữ Liệu
-
-- 🗄️ File script database: [`ptitshop.sql`](ptitshop.sql) (tại thư mục gốc).
-- Chứa toàn bộ cấu trúc bảng (`categories`, `products`, `orders`, `order_items`) và dữ liệu mẫu.
-
----
-
-## 🛠️ 2. Yêu Cầu Môi Trường
+## 🛠️ 1. Yêu Cầu Môi Trường
 
 - **JDK:** Java OpenJDK 17 trở lên.
 - **Web Server:** [Apache Tomcat 10.1.x+](https://tomcat.apache.org/download-10.cgi) (Jakarta EE 10 / Servlet 6.0).
@@ -21,7 +14,7 @@ Hệ thống Website Thương mại điện tử & Quản lý bán hàng thời 
 
 ---
 
-## 🚀 3. Hướng Dẫn Cài Đặt & Khởi Chạy
+## 🚀 2. Hướng Dẫn Cài Đặt & Khởi Chạy
 
 ### Bước 1: Khởi tạo Database MySQL
 Import file [`ptitshop.sql`](ptitshop.sql) vào MySQL để tạo database `ptitshop` cùng dữ liệu mẫu.
@@ -47,7 +40,7 @@ private static final String PASS = "123456";
 
 ---
 
-## 🌐 4. Đường Dẫn Truy Cập
+## 🌐 3. Đường Dẫn Truy Cập
 
 | Trang chức năng | Đường dẫn URL | Mô tả |
 | :--- | :--- | :--- |
