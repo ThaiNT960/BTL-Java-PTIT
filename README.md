@@ -2,9 +2,9 @@
 
 Hệ thống website bán hàng thời trang trực tuyến, xây dựng bằng **Java Web (Servlet/JSP + JDBC)** và cơ sở dữ liệu **MySQL**.
 
----
 
-## 🛠️ 1. Yêu Cầu Môi Trường
+
+##  1. Yêu Cầu Môi Trường
 
 - **JDK:** Java OpenJDK 17 trở lên.
 - **Web Server:** [Apache Tomcat 10.1.x+](https://tomcat.apache.org/download-10.cgi) (Jakarta EE 10 / Servlet 6.0).
@@ -14,7 +14,7 @@ Hệ thống website bán hàng thời trang trực tuyến, xây dựng bằng 
 
 ---
 
-## 🚀 2. Hướng Dẫn Cài Đặt & Khởi Chạy
+##  2. Hướng Dẫn Cài Đặt & Khởi Chạy
 
 ### Bước 1: Khởi tạo Database MySQL
 Import file [`ptitshop.sql`](ptitshop.sql) vào MySQL để tạo database `ptitshop` cùng dữ liệu mẫu.
@@ -40,7 +40,7 @@ private static final String PASS = "123456";
 
 ---
 
-## 🌐 3. Đường Dẫn Truy Cập
+##  3. Đường Dẫn Truy Cập
 
 | Trang chức năng | Đường dẫn URL | Mô tả |
 | :--- | :--- | :--- |
@@ -50,8 +50,4 @@ private static final String PASS = "123456";
 | 📦 **Tra cứu đơn hàng** | [http://localhost:8080/ptitshop_web/order-history.jsp](http://localhost:8080/ptitshop_web/order-history.jsp) | Tra cứu tình trạng đơn qua mã đơn |
 | ⚙️ **Quản trị Admin** | [http://localhost:8080/ptitshop_web/admin.jsp](http://localhost:8080/ptitshop_web/admin.jsp) | Quản lý sản phẩm, đơn hàng & thống kê doanh thu |
 
----
-
-<p align="center">
-  <b>PTIT Java Project - Nhóm 16.17</b>
-</p>
+![Visitors](https://komarev.com/ghpvc/?username=ThaiNT960-3&repo=BTL-Java-PTIT&color=blue&style=flat-square)
