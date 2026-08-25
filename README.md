@@ -12,7 +12,7 @@ Hệ thống website bán hàng thời trang trực tuyến, xây dựng bằng 
 - **Build Tool:** Apache Maven 3.8+.
 - **IDE:** IntelliJ IDEA, Eclipse hoặc VS Code.
 
----
+
 
 ##  2. Hướng Dẫn Cài Đặt & Khởi Chạy
 
@@ -38,7 +38,7 @@ private static final String PASS = "123456";
 
 *(Tùy chọn: Chạy `mvn clean package` trong thư mục `ptitshop_web` để xuất file `.war` deploy độc lập).*
 
----
+
 
 ##  3. Đường Dẫn Truy Cập
 
