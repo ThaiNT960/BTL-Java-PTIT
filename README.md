@@ -1,4 +1,4 @@
-# PTIT SHOP (PTIT.STYLE)
+# BTL Java PTIT
 
 Hệ thống website bán hàng thời trang trực tuyến, xây dựng bằng **Java Web (Servlet/JSP + JDBC)** và cơ sở dữ liệu **MySQL**.
 
