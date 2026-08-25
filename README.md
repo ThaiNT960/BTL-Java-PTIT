@@ -44,10 +44,10 @@ private static final String PASS = "123456";
 
 | Trang chức năng | Đường dẫn URL | Mô tả |
 | :--- | :--- | :--- |
-| 🏠 **Trang chủ** | [http://localhost:8080/ptitshop_web/home](http://localhost:8080/ptitshop_web/home) | Sản phẩm mới & sản phẩm bán chạy |
-| 🛍️ **Cửa hàng / Sản phẩm** | [http://localhost:8080/ptitshop_web/products](http://localhost:8080/ptitshop_web/products) | Danh mục, tìm kiếm, bộ lọc & phân trang |
-| 🛒 **Giỏ hàng & Đặt hàng** | [http://localhost:8080/ptitshop_web/cart.jsp](http://localhost:8080/ptitshop_web/cart.jsp) | Giỏ hàng, nhập thông tin và đặt hàng |
-| 📦 **Tra cứu đơn hàng** | [http://localhost:8080/ptitshop_web/order-history.jsp](http://localhost:8080/ptitshop_web/order-history.jsp) | Tra cứu tình trạng đơn qua mã đơn |
-| ⚙️ **Quản trị Admin** | [http://localhost:8080/ptitshop_web/admin.jsp](http://localhost:8080/ptitshop_web/admin.jsp) | Quản lý sản phẩm, đơn hàng & thống kê doanh thu |
+|  **Trang chủ** | [http://localhost:8080/ptitshop_web/home](http://localhost:8080/ptitshop_web/home) | Sản phẩm mới & sản phẩm bán chạy |
+|  **Cửa hàng / Sản phẩm** | [http://localhost:8080/ptitshop_web/products](http://localhost:8080/ptitshop_web/products) | Danh mục, tìm kiếm, bộ lọc & phân trang |
+|  **Giỏ hàng & Đặt hàng** | [http://localhost:8080/ptitshop_web/cart.jsp](http://localhost:8080/ptitshop_web/cart.jsp) | Giỏ hàng, nhập thông tin và đặt hàng |
+|  **Tra cứu đơn hàng** | [http://localhost:8080/ptitshop_web/order-history.jsp](http://localhost:8080/ptitshop_web/order-history.jsp) | Tra cứu tình trạng đơn qua mã đơn |
+|  **Quản trị Admin** | [http://localhost:8080/ptitshop_web/admin.jsp](http://localhost:8080/ptitshop_web/admin.jsp) | Quản lý sản phẩm, đơn hàng & thống kê doanh thu |
 
 ![Visitors](https://komarev.com/ghpvc/?username=ThaiNT960-3&repo=BTL-Java-PTIT&color=blue&style=flat-square)
